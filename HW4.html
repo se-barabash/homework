@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0"
+      />
+   </head>
+   <body>
+      <script>
+         'use strict'
+         const спільнота = [
+            'Мисник Станіслав Іванович',
+            'Малюжко Олексій Олексійович',
+            'Корнюхов Єгор Вячеславович',
+            'Пономарьов Юрій Володимирович',
+            'Магда Андрій Сергійович',
+            'Битяк Роман Русланович',
+            'Севастьянов Іван Володимирович',
+            'Барабаш Сергій Олександрович',
+            'Гал Бейл Бейлович',
+            'Томашевський Володимир Юрійович',
+            'Ткаченко Володимир Михайлович',
+            'Рябоволов Олександр Олександрович',
+            'Савенок Олександр Сергійович',
+            'Крук Владислав Васильович',
+            'Новицький Олександр Миколайович',
+            'Свириденко Володимир Анатолійович',
+         ]
+
+         // // вправа 1
+         // спільнота.sort().forEach((name, i) => {
+         //    console.log(
+         //       i +
+         //          1 +
+         //          '. ' +
+         //          name.split(' ')[0][0].toUpperCase() +
+         //          name.split(' ')[1][0].toUpperCase() +
+         //          name.split(' ')[2][0].toUpperCase() +
+         //          ' – ' +
+         //          name +
+         //          ','
+         //    )
+         // })
+
+         // // вправа 2 – спосіб 1
+         // const имена = спільнота.map((name) => {
+         //    if (
+         //       name.split(' ')[1].charAt(0) == 'А' ||
+         //       name.split(' ')[1].charAt(0) == 'Е' ||
+         //       name.split(' ')[1].charAt(0) == 'Є' ||
+         //       name.split(' ')[1].charAt(0) == 'И' ||
+         //       name.split(' ')[1].charAt(0) == 'І' ||
+         //       name.split(' ')[1].charAt(0) == 'Ї' ||
+         //       name.split(' ')[1].charAt(0) == 'О' ||
+         //       name.split(' ')[1].charAt(0) == 'У' ||
+         //       name.split(' ')[1].charAt(0) == 'Ю' ||
+         //       name.split(' ')[1].charAt(0) == 'Я'
+         //    ) {
+         //       return name.split(' ')[1]
+         //    }
+         // })
+         // console.log(имена.filter((name) => name !== undefined))
+
+         // // вправа 2 – спосіб 2
+         // const firstNames = спільнота.map((name) => name.split([' '])[1])
+         // firstNames.forEach((firstName) => {
+         //    const vovelNames = []
+         //    if (
+         //       firstName.charAt(0) == 'А' ||
+         //       firstName.charAt(0) == 'Е' ||
+         //       firstName.charAt(0) == 'Є' ||
+         //       firstName.charAt(0) == 'И' ||
+         //       firstName.charAt(0) == 'І' ||
+         //       firstName.charAt(0) == 'Ї' ||
+         //       firstName.charAt(0) == 'О' ||
+         //       firstName.charAt(0) == 'У' ||
+         //       firstName.charAt(0) == 'Ю' ||
+         //       firstName.charAt(0) == 'Я'
+         //    ) {
+         //       vovelNames.push(firstName)
+         //    } else {
+         //       return
+         //    }
+         // })
+         // console.log(firstNames)
+
+         // // вправа 3
+         // const num = 1234567
+         // console.log(+num.toString().split('').reverse().join(''))
+
+         // вправа 4
+         // const arr = [
+         //    0.5,
+         //    [0.6, 0.055, 1.6],
+         //    6,
+         //    [0.045, 0.4, [-5, 0.075]],
+         //    [6, -2.6, 8],
+         //    [[4, 5], [1.4, 6, 0.5, 0.046], 1.6, [5, 0.4], 1.35],
+         //    5,
+         //    [6, 0.437, 0.35, 2.6, [0.34], 1.7, [0.86]],
+         // ]
+         // const newArr = arr.flat().flat()
+         // console.log(newArr)
+         // console.log(newArr.reduce(func, 1))
+         // function func(total, num) {
+         //    return total * num
+         // }
+      </script>
+   </body>
+</html>
