@@ -11,52 +11,55 @@
       <script>
          'use strict'
 
-         // вправа 1 (1)
+         // // вправа 1 (1)
 
-         for (let i = 1; i <= 100; i++) {
-            if (i % 3 == 0 && i % 5 == 0) {
-               console.log('ЛолKeк')
-            } else if (i % 3 == 0) {
-               console.log('Лол')
-            } else if (i % 5 == 0) {
-               console.log('Кек')
-            } else {
-               console.log(i)
-            }
-         }
+         // for (let i = 1; i <= 100; i++) {
+         //    if (i % 3 === 0 && i % 5 === 0) {
+         //       console.log('ЛолKéк')
+         //    } else if (i % 3 === 0) {
+         //       console.log('Лол')
+         //    } else if (i % 5 === 0) {
+         //       console.log('Кек')
+         //    } else {
+         //       console.log(i)
+         //    }
+         // }
 
          // // вправа 1 (2)
 
          // for (let i = 1; i <= 100; i++) {
          //    // вправа 2 ()
-         //    i % 3 == 0 && i % 5 == 0
+         //    i % 3 === 0 && i % 5 === 0
          //       ? console.log('ЛолKek')
-         //       : i % 3 == 0
+         //       : i % 3 === 0
          //       ? console.log('Лол')
-         //       : i % 5 == 0
+         //       : i % 5 === 0
          //       ? console.log('Кек')
          //       : console.log(i)
          // }
 
-         console.log('\n* * * * * вправа 2 * * * * * \n\n')
+         // // вправа 2.1
 
-         // вправа 2.1
-
-         let value = 10
-         if (typeof value != 'number') {
-            console.log('таке чуство, шо бог десь наказує нас за шось')
-         } else {
-            for (let i = 2; i < value; i += 2) {
-               console.log(i)
-            }
-         }
-
-         // // вправа 2.2
-         // let i = 2
-         // while (i < value) {
-         //    console.log(i)
-         //    i += 2
+         // let value = 10
+         // if (typeof value != 'number' || typeof value === 'NaN') {
+         //    console.log('таке чуство, шо бог десь наказує нас за шось')
+         // } else {
+         //    for (let i = 2; i < value; i += 2) {
+         //       console.log(i)
+         //    }
          // }
+
+         // вправа 2.2
+
+         let i = 2
+         while (i < 10) {
+            console.log(i)
+            i += 2
+         }
       </script>
    </body>
 </html>
+
+//
+<!-- typeof value != 'number' || typeof value === 'NaN' console.log('таке чуство, шо
+// бог десь наказує нас за шось') -->
