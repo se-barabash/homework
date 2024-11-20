@@ -20,19 +20,30 @@
          //       ? recursiveOddSumTo(num - 1) + num
          //       : recursiveOddSumTo(num - 1)
          // }
-         // console.log(recursiveOddSumTo(11))
+         // console.log(recursiveOddSumTo(10))
 
-         // вправа 2
-         function iterativeOddSumTo(num) {
+         // // вправа 2
+         // function iterativeOddSumTo(num) {
+         //    let sum = 0
+         //    for (let i = 1; i <= num; i++) {
+         //       if (i % 2 === 1) {
+         //          sum += i
+         //       }
+         //    }
+         //    return sum
+         // }
+         // console.log(iterativeOddSumTo(10))
+
+         // вправа 2 (варіянт 2)
+         function iterativeOddSumTo2(num) {
             let sum = 0
-            for (let i = 1; i <= num; i++) {
-               if (i % 2 === 1) {
-                  sum += i
-               }
+            for (let i = 1; i <= num; i += 2) {
+               // здається, це спрощення  ускладнює читабельність :-)
+               sum += i
             }
-            return console.log(sum)
+            return sum
          }
-         iterativeOddSumTo(11)
+         console.log(iterativeOddSumTo2(10))
       </script>
    </body>
 </html>
