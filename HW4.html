@@ -30,19 +30,16 @@
          ]
 
          // вправа 1
-         спільнота.sort().forEach((name, i) => {
-            console.log(
-               i +
-                  1 +
-                  '. ' +
-                  name.split(' ')[0][0] +
-                  name.split(' ')[1][0] +
-                  name.split(' ')[2][0] +
-                  ' – ' +
-                  name +
-                  ','
+         const inicials = спільнота.sort().map((name, i) => {
+            const container = []
+            container.push(
+               `${name.split(' ')[0][0]}.${name.split(' ')[1][0]}.${
+                  name.split(' ')[2][0]
+               }.`
             )
+            return container
          })
+         console.log(...[inicials])
 
          // // вправа 2 – спосіб 1
          // const имена = спільнота.map((name) => {
