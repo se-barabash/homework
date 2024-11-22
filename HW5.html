@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0"
+      />
+   </head>
+   <body>
+      <script>
+         'use strict'
+         // // задача 1
+         // function distance(before, after, unit) {
+         //    if (unit === 'milliseconds') {
+         //       return console.log(
+         //          '1. milliseconds: ' +
+         //             Math.abs(new Date(before) - new Date(after)) +
+         //             ','
+         //       )
+         //    } else if (unit === 'seconds') {
+         //       return console.log(
+         //          '2. seconds: ' +
+         //             Math.abs(new Date(before) - new Date(after)) / 1000 +
+         //             ','
+         //       )
+         //    } else if (unit === 'minutes') {
+         //       return console.log(
+         //          '3. minutes: ' +
+         //             Math.abs(new Date(before) - new Date(after)) /
+         //                (1000 * 60) +
+         //             ','
+         //       )
+         //    } else if (unit === 'hours') {
+         //       return console.log(
+         //          '4. hours:' +
+         //             Math.abs(new Date(before) - new Date(after)) /
+         //                (1000 * 60 * 60) +
+         //             ','
+         //       )
+         //    } else if (unit === 'days') {
+         //       return console.log(
+         //          '5. days: ' +
+         //             Math.abs(new Date(before) - new Date(after)) /
+         //                (1000 * 60 * 60 * 24) +
+         //             ','
+         //       )
+         //    } else if (unit === 'months') {
+         //       return console.log(
+         //          '6. months: ≈' +
+         //             Math.abs(new Date(before) - new Date(after)) /
+         //                (1000 * 60 * 60 * 24 * 31) +
+         //             ','
+         //       )
+         //    } else if (unit === 'years') {
+         //       return console.log(
+         //          '7. years: ≈' +
+         //             Math.abs(new Date(before) - new Date(after)) /
+         //                (1000 * 60 * 60 * 24 * 365.25) +
+         //             ','
+         //       )
+         //    } else if (unit === 'decades') {
+         //       return console.log(
+         //          '8. decades: ≈' +
+         //             Math.abs(new Date(before) - new Date(after)) /
+         //                (1000 * 60 * 60 * 24 * 365.25 * 10) +
+         //             ','
+         //       )
+         //    } else if (unit === 'centries') {
+         //       return console.log(
+         //          '9. centries: ≈' +
+         //             Math.abs(new Date(before) - new Date(after)) /
+         //                (1000 * 60 * 60 * 24 * 365.25 * 10 * 10) +
+         //             ','
+         //       )
+         //    } else {
+         //       return console.log('oh! please check time unit')
+         //    }
+         // }
+         // distance('22 Nov 2024', '23 Nov 2024', 'milliseconds')
+         // distance('22 Nov 2024', '23 Nov 2024', 'seconds')
+         // distance('22 Nov 2024', '23 Nov 2024', 'minutes')
+         // distance('22 Nov 2024', '23 Nov 2024', 'hours')
+         // distance('22 Nov 2024', '23 Nov 2024', 'days')
+         // distance('22 Nov 2024', '23 Nov 2024', 'months')
+         // distance('22 Nov 2024', '23 Nov 2024', 'years')
+         // distance('22 Nov 2024', '23 Nov 2024', 'decades')
+         // distance('22 Nov 2024', '23 Nov 2024', 'centries')
+         // distance('22 Nov 2024', '23 Nov 2024', 32)
+
+         // задача 2
+         function optimizer(obj) {
+            for (let key of Object.keys(obj)) {
+               console.log(
+                  `${key[0].toUpperCase()}${key
+                     .slice(1, key.length)
+                     .toLowerCase()}: ${(
+                     Math.round(obj[key] * 100) / 100
+                  ).toFixed(2)}`
+               )
+            }
+         }
+
+         const priceData = {
+            Apples: '23.4',
+            BANANAS: '48',
+            oRAngEs: '48.7584',
+         }
+
+         optimizer(priceData)
+      </script>
+   </body>
+</html>
