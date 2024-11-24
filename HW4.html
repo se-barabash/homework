@@ -34,16 +34,15 @@
             let container = `${name.split(' ')[0][0]}.${
                name.split(' ')[1][0]
             }.${name.split(' ')[2][0]}.`
-
             return container
          })
          console.log(inicials)
 
-         // // задача 2 (1)
-         const vowels = ['а', 'е', 'є', 'і', 'ї', 'о', 'у', 'ю', 'я']
-         const filteredNames = []
+         // // задача 2
+         // const vowels = ['а', 'е', 'є', 'і', 'ї', 'о', 'у', 'ю', 'я']
+         // const filteredNames = []
 
-         // // спосіб 1-й  // // // // // // // // // // // // // // // // // // // // // // // // // //
+         // // спосіб 1-й  // // //
          // const firstNames = users.map((name) => name.split(' ')[1])
          // for (let i = 0; i < users.length; i++) {
          //    for (let j = 0; j < vowels.length; j++) {
@@ -54,7 +53,7 @@
          // }
          // console.log(filteredNames.sort())
 
-         // // спосіб 2-й  // // // // // // // // // // // // // // // // // // // // // // // // // //
+         // // спосіб 2-й  // // //
          // const firstNames = users.map((name) => {
          //    for (let i = 0; i < vowels.length; i++) {
          //       if (vowels[i].toUpperCase() === name.split(' ')[1][0]) {
