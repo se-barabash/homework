@@ -29,18 +29,18 @@
             'Свириденко Володимир Анатолійович',
          ]
 
-         // задача 1
-         const inicials = users.sort().map((name, i) => {
-            let container = `${name.split(' ')[0][0]}.${
-               name.split(' ')[1][0]
-            }.${name.split(' ')[2][0]}.`
-            return container
-         })
-         console.log(inicials)
+         // // задача 1
+         // const inicials = users.sort().map((name, i) => {
+         //    let container = `${name.split(' ')[0][0]}.${
+         //       name.split(' ')[1][0]
+         //    }.${name.split(' ')[2][0]}.`
+         //    return container
+         // })
+         // console.log(inicials)
 
-         // // задача 2
-         // const vowels = ['а', 'е', 'є', 'і', 'ї', 'о', 'у', 'ю', 'я']
-         // const filteredNames = []
+         // задача 2
+         const vowels = ['а', 'е', 'є', 'і', 'ї', 'о', 'у', 'ю', 'я']
+         const filteredNames = []
 
          // // спосіб 1-й  // // //
          // const firstNames = users.map((name) => name.split(' ')[1])
@@ -54,10 +54,13 @@
          // console.log(filteredNames.sort())
 
          // // спосіб 2-й  // // //
-         // const firstNames = users.map((name) => {
-         //    for (let i = 0; i < vowels.length; i++) {
-         //       if (vowels[i].toUpperCase() === name.split(' ')[1][0]) {
-         //          filteredNames.push(name.split(' ')[1])
+         // const firstNames = users.map((name) => name.split(' ')[1])
+         // firstNames.forEach((firstName) => {
+         //    for (let i = 0; i < users.length; i++) {
+         //       for (let j = 0; j < vowels.length; j++) {
+         //          if (firstName[i] === vowels[j].toUpperCase()) {
+         //             filteredNames.push(firstName)
+         //          }
          //       }
          //    }
          // })
@@ -67,23 +70,23 @@
          // const num = 1234567
          // console.log(+num.toString().split('').reverse().join(''))
 
-         // // задача 4
-         // const arr = [
-         //    0.5,
-         //    [0.6, 0.055, 1.6],
-         //    6,
-         //    [0.045, 0.4, [-5, 0.075]],
-         //    [6, -2.6, 8],
-         //    [[4, 5], [1.4, 6, 0.5, 0.046], 1.6, [5, 0.4], 1.35],
-         //    5,
-         //    [6, 0.437, 0.35, 2.6, [0.34], 1.7, [0.86]],
-         // ]
-         // const newArr = arr.flat(Infinity)
-         // console.log(newArr)
-         // console.log(newArr.reduce(func, 1))
-         // function func(total, num) {
-         //    return total * num
-         // }
+         // задача 4
+         const arr = [
+            0.5,
+            [0.6, 0.055, 1.6],
+            6,
+            [0.045, 0.4, [-5, 0.075]],
+            [6, -2.6, 8],
+            [[4, 5], [1.4, 6, 0.5, 0.046], 1.6, [5, 0.4], 1.35],
+            5,
+            [6, 0.437, 0.35, 2.6, [0.34], 1.7, [0.86]],
+         ]
+         const newArr = arr.flat(Infinity)
+         console.log(newArr)
+         console.log(newArr.reduce(func, 1))
+         function func(total, num) {
+            return total * num
+         }
       </script>
    </body>
 </html>
