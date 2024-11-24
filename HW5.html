@@ -11,94 +11,56 @@
       <script>
          'use strict'
          // // задача 1
-         // function distance(before, after, unit) {
-         //    if (unit === 'milliseconds') {
-         //       return console.log(
-         //          '1. milliseconds: ' +
-         //             Math.abs(new Date(before) - new Date(after)) +
-         //             ','
-         //       )
-         //    } else if (unit === 'seconds') {
-         //       return console.log(
-         //          '2. seconds: ' +
-         //             Math.abs(new Date(before) - new Date(after)) / 1000 +
-         //             ','
+         // function durationBetweenDates(
+         //    before = '22 Nov 2024',
+         //    after = '23 Nov 2024',
+         //    unit = 'hours'
+         // ) {
+         //    if (unit === 'seconds') {
+         //       return (
+         //          Math.abs(new Date(before) - new Date(after)) / 1000 +
+         //          ' ' +
+         //          unit
          //       )
          //    } else if (unit === 'minutes') {
-         //       return console.log(
-         //          '3. minutes: ' +
-         //             Math.abs(new Date(before) - new Date(after)) /
-         //                (1000 * 60) +
-         //             ','
+         //       return (
+         //          Math.abs(new Date(before) - new Date(after)) / (1000 * 60) +
+         //          ' ' +
+         //          unit
          //       )
          //    } else if (unit === 'hours') {
-         //       return console.log(
-         //          '4. hours:' +
-         //             Math.abs(new Date(before) - new Date(after)) /
-         //                (1000 * 60 * 60) +
-         //             ','
+         //       return (
+         //          Math.abs(new Date(before) - new Date(after)) /
+         //             (1000 * 60 * 60) +
+         //          ' ' +
+         //          unit
          //       )
          //    } else if (unit === 'days') {
-         //       return console.log(
-         //          '5. days: ' +
-         //             Math.abs(new Date(before) - new Date(after)) /
-         //                (1000 * 60 * 60 * 24) +
-         //             ','
-         //       )
-         //    } else if (unit === 'months') {
-         //       return console.log(
-         //          '6. months: ≈' +
-         //             Math.abs(new Date(before) - new Date(after)) /
-         //                (1000 * 60 * 60 * 24 * 31) +
-         //             ','
-         //       )
-         //    } else if (unit === 'years') {
-         //       return console.log(
-         //          '7. years: ≈' +
-         //             Math.abs(new Date(before) - new Date(after)) /
-         //                (1000 * 60 * 60 * 24 * 365.25) +
-         //             ','
-         //       )
-         //    } else if (unit === 'decades') {
-         //       return console.log(
-         //          '8. decades: ≈' +
-         //             Math.abs(new Date(before) - new Date(after)) /
-         //                (1000 * 60 * 60 * 24 * 365.25 * 10) +
-         //             ','
-         //       )
-         //    } else if (unit === 'centries') {
-         //       return console.log(
-         //          '9. centries: ≈' +
-         //             Math.abs(new Date(before) - new Date(after)) /
-         //                (1000 * 60 * 60 * 24 * 365.25 * 10 * 10) +
-         //             ','
+         //       return (
+         //          Math.abs(new Date(before) - new Date(after)) /
+         //             (1000 * 60 * 60 * 24) +
+         //          ' ' +
+         //          unit
          //       )
          //    } else {
-         //       return console.log('oh! please check time unit')
+         //       return 'oh! please check time unit'
          //    }
          // }
-         // distance('22 Nov 2024', '23 Nov 2024', 'milliseconds')
-         // distance('22 Nov 2024', '23 Nov 2024', 'seconds')
-         // distance('22 Nov 2024', '23 Nov 2024', 'minutes')
-         // distance('22 Nov 2024', '23 Nov 2024', 'hours')
-         // distance('22 Nov 2024', '23 Nov 2024', 'days')
-         // distance('22 Nov 2024', '23 Nov 2024', 'months')
-         // distance('22 Nov 2024', '23 Nov 2024', 'years')
-         // distance('22 Nov 2024', '23 Nov 2024', 'decades')
-         // distance('22 Nov 2024', '23 Nov 2024', 'centries')
-         // distance('22 Nov 2024', '23 Nov 2024', 32)
+         // console.log(
+         //    durationBetweenDates('02 Aug 1985', '03 Aug 1985', 'seconds')
+         // )
+         // console.log(durationBetweenDates('01 Jan 2024', '13 Nov 2024', 'days'))
+         // console.log(durationBetweenDates())
 
-         // задача 2
+         // // задача 2
          function optimizer(obj) {
+            let newObj = ''
             for (let key of Object.keys(obj)) {
-               console.log(
-                  `${key[0].toUpperCase()}${key
-                     .slice(1, key.length)
-                     .toLowerCase()}: ${(
-                     Math.round(obj[key] * 100) / 100
-                  ).toFixed(2)}`
-               )
+               newObj += `${key.toLowerCase()}: '${(
+                  Math.round(obj[key] * 100) / 100
+               ).toFixed(2)}', `
             }
+            return new Object(newObj)
          }
 
          const priceData = {
@@ -106,8 +68,8 @@
             BANANAS: '48',
             oRAngEs: '48.7584',
          }
-
-         optimizer(priceData)
+         let updatedPriceData = optimizer(priceData)
+         console.log(updatedPriceData)
       </script>
    </body>
 </html>
