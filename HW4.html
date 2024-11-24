@@ -10,7 +10,7 @@
    <body>
       <script>
          'use strict'
-         const спільнота = [
+         const users = [
             'Мисник Станіслав Іванович',
             'Малюжко Олексій Олексійович',
             'Корнюхов Єгор Вячеславович',
@@ -19,7 +19,7 @@
             'Битяк Роман Русланович',
             'Севастьянов Іван Володимирович',
             'Барабаш Сергій Олександрович',
-            'Гал Бейл Бейлович',
+            'Гал Бейло Бейлович',
             'Томашевський Володимир Юрійович',
             'Ткаченко Володимир Михайлович',
             'Рябоволов Олександр Олександрович',
@@ -29,65 +29,46 @@
             'Свириденко Володимир Анатолійович',
          ]
 
-         // вправа 1
-         const inicials = спільнота.sort().map((name, i) => {
-            const container = []
-            container.push(
-               `${name.split(' ')[0][0]}.${name.split(' ')[1][0]}.${
-                  name.split(' ')[2][0]
-               }.`
-            )
-            return container
-         })
-         console.log(...[inicials])
+         // // вправа 1
+         // const inicials = users.sort().map((name, i) => {
+         //    let container = `${name.split(' ')[0][0]}.${
+         //       name.split(' ')[1][0]
+         //    }.${name.split(' ')[2][0]}.`
 
-         // // вправа 2 – спосіб 1
-         // const имена = спільнота.map((name) => {
-         //    if (
-         //       name.split(' ')[1].charAt(0) == 'А' ||
-         //       name.split(' ')[1].charAt(0) == 'Е' ||
-         //       name.split(' ')[1].charAt(0) == 'Є' ||
-         //       name.split(' ')[1].charAt(0) == 'И' ||
-         //       name.split(' ')[1].charAt(0) == 'І' ||
-         //       name.split(' ')[1].charAt(0) == 'Ї' ||
-         //       name.split(' ')[1].charAt(0) == 'О' ||
-         //       name.split(' ')[1].charAt(0) == 'У' ||
-         //       name.split(' ')[1].charAt(0) == 'Ю' ||
-         //       name.split(' ')[1].charAt(0) == 'Я'
-         //    ) {
-         //       return name.split(' ')[1]
+         //    return container
+         // })
+         // console.log(inicials)
+
+         // // задача 2 (1)
+         const vowels = ['а', 'е', 'є', 'і', 'ї', 'о', 'у', 'ю', 'я']
+         const filteredNames = []
+
+         // спосіб 1-й  // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+         // const firstNames = users.map((name) => name.split(' ')[1])
+         // for (let i = 0; i < users.length; i++) {
+         //    for (let j = 0; j < vowels.length; j++) {
+         //       if (firstNames[i][0] === vowels[j].toUpperCase()) {
+         //          filteredNames.push(firstNames[i])
+         //       }
+         //    }
+         // }
+         // console.log(filteredNames.sort())
+
+         // // спосіб 2-й  // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+         // const firstNames = users.map((name) => {
+         //    for (let i = 0; i < vowels.length; i++) {
+         //       if (vowels[i].toUpperCase() === name.split(' ')[1][0]) {
+         //          filteredNames.push(name.split(' ')[1])
+         //       }
          //    }
          // })
-         // console.log(имена.filter((name) => name !== undefined))
-
-         // // вправа 2 – спосіб 2
-         // const firstNames = спільнота.map((name) => name.split([' '])[1])
-         // firstNames.forEach((firstName) => {
-         //    const vovelNames = []
-         //    if (
-         //       firstName.charAt(0) == 'А' ||
-         //       firstName.charAt(0) == 'Е' ||
-         //       firstName.charAt(0) == 'Є' ||
-         //       firstName.charAt(0) == 'И' ||
-         //       firstName.charAt(0) == 'І' ||
-         //       firstName.charAt(0) == 'Ї' ||
-         //       firstName.charAt(0) == 'О' ||
-         //       firstName.charAt(0) == 'У' ||
-         //       firstName.charAt(0) == 'Ю' ||
-         //       firstName.charAt(0) == 'Я'
-         //    ) {
-         //       vovelNames.push(firstName)
-         //    } else {
-         //       return
-         //    }
-         // })
-         // console.log(firstNames)
+         // console.log(filteredNames) // чому пуста змінна для фільтрованих имен не поміщається на перебору .map()
 
          // // вправа 3
          // const num = 1234567
          // console.log(+num.toString().split('').reverse().join(''))
 
-         // вправа 4
+         // // вправа 4
          // const arr = [
          //    0.5,
          //    [0.6, 0.055, 1.6],
@@ -98,7 +79,7 @@
          //    5,
          //    [6, 0.437, 0.35, 2.6, [0.34], 1.7, [0.86]],
          // ]
-         // const newArr = arr.flat().flat()
+         // const newArr = arr.flat(Infinity)
          // console.log(newArr)
          // console.log(newArr.reduce(func, 1))
          // function func(total, num) {
