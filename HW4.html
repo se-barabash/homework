@@ -53,40 +53,40 @@
          // }
          // console.log(filteredNames.sort())
 
-         // // спосіб 2-й  // // //
-         // const firstNames = users.map((name) => name.split(' ')[1])
-         // firstNames.forEach((firstName) => {
-         //    for (let i = 0; i < users.length; i++) {
-         //       for (let j = 0; j < vowels.length; j++) {
-         //          if (firstName[i] === vowels[j].toUpperCase()) {
-         //             filteredNames.push(firstName)
-         //          }
-         //       }
-         //    }
-         // })
-         // console.log(filteredNames)
+         // спосіб 2-й  // // //
+         const firstNames = users.map((name) => name.split(' ')[1])
+         firstNames.forEach((firstName) => {
+            for (let i = 0; i < users.length; i++) {
+               for (let j = 0; j < vowels.length; j++) {
+                  if (firstName[i] === vowels[j].toUpperCase()) {
+                     filteredNames.push(firstName)
+                  }
+               }
+            }
+         })
+         console.log(filteredNames)
 
          // // задача 3
          // const num = 1234567
          // console.log(+num.toString().split('').reverse().join(''))
 
-         // задача 4
-         const arr = [
-            0.5,
-            [0.6, 0.055, 1.6],
-            6,
-            [0.045, 0.4, [-5, 0.075]],
-            [6, -2.6, 8],
-            [[4, 5], [1.4, 6, 0.5, 0.046], 1.6, [5, 0.4], 1.35],
-            5,
-            [6, 0.437, 0.35, 2.6, [0.34], 1.7, [0.86]],
-         ]
-         const newArr = arr.flat(Infinity)
-         console.log(newArr)
-         console.log(newArr.reduce(func, 1))
-         function func(total, num) {
-            return total * num
-         }
+         // // задача 4
+         // const arr = [
+         //    0.5,
+         //    [0.6, 0.055, 1.6],
+         //    6,
+         //    [0.045, 0.4, [-5, 0.075]],
+         //    [6, -2.6, 8],
+         //    [[4, 5], [1.4, 6, 0.5, 0.046], 1.6, [5, 0.4], 1.35],
+         //    5,
+         //    [6, 0.437, 0.35, 2.6, [0.34], 1.7, [0.86]],
+         // ]
+         // const newArr = arr.flat(Infinity)
+         // console.log(newArr)
+         // console.log(newArr.reduce(func, 1))
+         // function func(total, num) {
+         //    return total * num
+         // }
       </script>
    </body>
 </html>
