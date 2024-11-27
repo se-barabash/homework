@@ -59,9 +59,15 @@
             oRAngEs: '48.7584',
          }
 
-         function optimizer(obj) {}
+         function optimizer(obj) {
+            let str = ''
+            Object.entries(obj).forEach((item) => {
+               str += `${item[0].toLowerCase()}: ${Number(item[1]).toFixed(2)} `
+            })
+            return [str]
+         }
          let updatedPriceData = optimizer(priceData)
-         console.log(updatedPriceData)
+         console.log({updatedPriceData})
       </script>
    </body>
 </html>
