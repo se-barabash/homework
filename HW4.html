@@ -40,7 +40,7 @@
 
          // задача 2
          const vowels = ['а', 'е', 'є', 'і', 'ї', 'о', 'у', 'ю', 'я']
-         const filteredNames = []
+         let filteredNames = []
 
          // // спосіб 1-й  // // //
          // const firstNames = users.map((name) => name.split(' ')[1])
@@ -51,20 +51,16 @@
          //       }
          //    }
          // }
-         // console.log(filteredNames.sort())
+         // console.log(filteredNames)
 
-         // спосіб 2-й  // // //
-         const firstNames = users.map((name) => name.split(' ')[1])
-         firstNames.forEach((firstName) => {
-            for (let i = 0; i < users.length; i++) {
-               for (let j = 0; j < vowels.length; j++) {
-                  if (firstName[i] === vowels[j].toUpperCase()) {
-                     filteredNames.push(firstName)
-                  }
-               }
-            }
-         })
-         console.log(filteredNames)
+         // // спосіб 2-й  // // //
+         // const firstNames = users.map((name) => name.split(' ')[1])
+         // filteredNames = firstNames.filter((item) => {
+         //    if (vowels.includes(item[0].toLowerCase())) {
+         //       return true
+         //    }
+         // })
+         // console.log(filteredNames)
 
          // // задача 3
          // const num = 1234567
