@@ -11,12 +11,21 @@
       <script>
          'use strict'
 
-         // // задача 1
-         // const userNames = [
-         //    'Петрик Ольга Іванівна',
-         //    'Гнатюк Петро Антонович',
-         //    'Рудко Андрій Опанасович',
-         // ]
+         // задача 1
+         const userNames = [
+            'Петрик Ольга Іванівна',
+            'Гнатюк Петро Антонович',
+            'Рудко Андрій Опанасович',
+         ]
+         // console.log(userNames)
+
+         let initials = ''
+         const names = userNames.map((names) => {
+            return names.split(' ')
+         })
+
+         const nameSS = names.map((word) => word.charAt(0).toUpperCase())
+
          // let inicials = userNames.sort().map((name, i) => {
          //    let container = `${name.split(' ')[0][0]}.${
          //       name.split(' ')[1][0]
