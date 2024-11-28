@@ -10,6 +10,8 @@
    <body>
       <script>
          'use strict'
+
+         // // задача 1
          const users = [
             'Мисник Станіслав Іванович',
             'Малюжко Олексій Олексійович',
@@ -28,8 +30,6 @@
             'Новицький Олександр Миколайович',
             'Свириденко Володимир Анатолійович',
          ]
-
-         // // задача 1
          // const inicials = users.sort().map((name, i) => {
          //    let container = `${name.split(' ')[0][0]}.${
          //       name.split(' ')[1][0]
@@ -40,22 +40,31 @@
 
          // задача 2
          const vowels = ['а', 'е', 'є', 'і', 'ї', 'о', 'у', 'ю', 'я']
+         const userNames = [
+            'Петро',
+            'Емма',
+            'Юстин',
+            'Ілля',
+            'Марта',
+            'Яна',
+            'Василь',
+            'Антон',
+            'Олена',
+         ]
          let filteredNames = []
 
          // // спосіб 1-й  // // //
-         // const firstNames = users.map((name) => name.split(' ')[1])
-         // for (let i = 0; i < users.length; i++) {
+         // for (let i = 0; i < userNames.length; i++) {
          //    for (let j = 0; j < vowels.length; j++) {
-         //       if (firstNames[i][0] === vowels[j].toUpperCase()) {
-         //          filteredNames.push(firstNames[i])
+         //       if (userNames[i][0] === vowels[j].toUpperCase()) {
+         //          filteredNames.push(userNames[i])
          //       }
          //    }
          // }
          // console.log(filteredNames)
 
          // // спосіб 2-й  // // //
-         // const firstNames = users.map((name) => name.split(' ')[1])
-         // filteredNames = firstNames.filter((item) => {
+         // filteredNames = userNames.filter((item) => {
          //    if (vowels.includes(item[0].toLowerCase())) {
          //       return true
          //    }
@@ -63,8 +72,9 @@
          // console.log(filteredNames)
 
          // // задача 3
-         // const num = 1234567
-         // console.log(+num.toString().split('').reverse().join(''))
+         // const currentMaxValue = 4589
+         // console.log(+currentMaxValue.toString().split('').reverse().join(''))
+         // console.log(typeof currentMaxValue)
 
          // // задача 4
          // const arr = [
