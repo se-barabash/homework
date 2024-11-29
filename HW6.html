@@ -56,11 +56,12 @@
                runningTimeInMinutes: 107,
             },
          ]
-         // console.table(movies)
+         console.log(movies)
 
          function byProperty(property, direction) {
-            const movie = movies.reduce((movie) => movie['releaseYear'])
-            console.log(movie)
+            if (property === 'releaseYear') {
+               
+            }
          }
          // console.log(movies.sort(byProperty('releaseYear', '>'))) // виведе масив фільмів посортованих по року випуску, від старішого до новішого
          // console.log(movies.sort(byProperty('runningTimeInMinutes', '<'))) // виведе масив фільмів посортованих по їх тривалості, від найдовшого до найкоротшого
