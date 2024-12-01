@@ -58,6 +58,17 @@
             BANANAS: '48',
             oRAngEs: '48.7584',
          }
+         const formatedObj = {}
+
+         function optimizer(obj) {
+            for (let key in obj) {
+               formatedObj[key.toLowerCase()] = (+obj[key]).toFixed(2)
+            }
+            return formatedObj
+         }
+
+         let updatedPriceData = optimizer(priceData)
+         console.log(updatedPriceData)
       </script>
    </body>
 </html>
