@@ -11,57 +11,68 @@
    <body>
       <script>
          'use strict'
-         // // вправа 1
+         // // задача 1 (1)
          // function addThemAll() {
          //    let sum = 0
          //    for (let i = 0; i < arguments.length; i++) {
          //       sum += arguments[i]
          //    }
-         //    return sum
+         //    return console.log(sum)
          // }
-         // console.log(addThemAll(2, 4))
-         // console.log(addThemAll(1, 2, 3, 4))
-         // console.log(addThemAll(5, 5, 10))m
+         // addThemAll(2, 4), addThemAll(1, 2, 3, 4), addThemAll(5, 5, 10)
 
          // // вправа 2
-         // const multiply = (a) => (b) => a * b
-         // console.log(multiply(5)(5))
-         // console.log(multiply(2)(-2))
-         // console.log(multiply(4)(3))
+         // const multiply = (a) => (b) => console.log(a * b)
+         // multiply(5)(5), multiply(2)(-2), multiply(4)(3)
 
          // // вправа 3
-         const movies = [
-            {
-               movieName: 'The Thing',
-               releaseYear: 1982,
-               directedBy: 'Carpenter',
-               runningTimeInMinutes: 109,
-            },
-            {
-               movieName: 'Aliens',
-               releaseYear: 1986,
-               directedBy: 'Cameron',
-               runningTimeInMinutes: 137,
-            },
-            {
-               movieName: 'Men in Black',
-               releaseYear: 1997,
-               directedBy: 'Sonnenfeld',
-               runningTimeInMinutes: 98,
-            },
-            {
-               movieName: 'Predator',
-               releaseYear: 1987,
-               directedBy: 'McTiernan',
-               runningTimeInMinutes: 107,
-            },
-         ]
-         console.log(movies)
+         // const movies = [
+         //    {
+         //       movieName: 'The Thing',
+         //       releaseYear: 1982,
+         //       directedBy: 'Carpenter',
+         //       runningTimeInMinutes: 109,
+         //    },
+         //    {
+         //       movieName: 'Aliens',
+         //       releaseYear: 1986,
+         //       directedBy: 'Cameron',
+         //       runningTimeInMinutes: 137,
+         //    },
+         //    {
+         //       movieName: 'Men in Black',
+         //       releaseYear: 1997,
+         //       directedBy: 'Sonnenfeld',
+         //       runningTimeInMinutes: 98,
+         //    },
+         //    {
+         //       movieName: 'Predator',
+         //       releaseYear: 1987,
+         //       directedBy: 'McTiernan',
+         //       runningTimeInMinutes: 107,
+         //    },
+         // ]
 
-         function byProperty(property, direction) {}
-         // console.log(movies.sort(byProperty('releaseYear', '>'))) // виведе масив фільмів посортованих по року випуску, від старішого до новішого
-         // console.log(movies.sort(byProperty('runningTimeInMinutes', '<'))) // виведе масив фільмів посортованих по їх тривалості, від найдовшого до найкоротшого
-         // console.log(movies.sort(byProperty('movieName', '>'))) // виведе масив фільмів посортованих по назві, в алфавітному порядку
+         // function byProperty(property, direction) {
+         //    const result = []
+         //    for (let i = 0; i < movies.length; i++) {
+         //       result.push(movies[i][property])
+         //    }
+         //    if (property === 'movieName') {
+         //       direction === '>'
+         //          ? console.log(result.sort())
+         //          : console.log(result.sort().reverse())
+         //    }
+         //    if (
+         //       property === 'releaseYear' ||
+         //       property === 'runningTimeInMinutes'
+         //    ) {
+         //       direction === '>'
+         //          ? console.log(result.sort((a, b) => a - b))
+         //          : console.log(result.sort((a, b) => -a + b))
+         //    }
+         // }
+         // byProperty('runningTimeInMinutes', '>')
 
          // // вправа 4
          // const userNames = [
@@ -76,8 +87,7 @@
          //    'Олена',
          //    'Емма',
          // ]
-         // const filterUnique = [...new Set(userNames)]
-         // console.log(filterUnique)
+         // console.log([...new Set(userNames)])
       </script>
    </body>
 </html>
