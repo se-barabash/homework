@@ -21,6 +21,16 @@
          // }
          // addThemAll(2, 4), addThemAll(1, 2, 3, 4), addThemAll(5, 5, 10)
 
+         // // задача 1 (2)
+         // function addThemAll(...args) {
+         //    let sum = 0
+         //    for (let arg of args) {
+         //       sum += arg
+         //    }
+         //    return console.log(sum)
+         // }
+         // addThemAll(2, 4), addThemAll(1, 2, 3, 4), addThemAll(5, 5, 10)
+
          // // вправа 2
          // const multiply = (a) => (b) => console.log(a * b)
          // multiply(5)(5), multiply(2)(-2), multiply(4)(3)
@@ -54,25 +64,18 @@
          // ]
 
          // function byProperty(property, direction) {
-         //    const result = []
-         //    for (let i = 0; i < movies.length; i++) {
-         //       result.push(movies[i][property])
-         //    }
-         //    if (property === 'movieName') {
-         //       direction === '>'
-         //          ? console.log(result.sort())
-         //          : console.log(result.sort().reverse())
-         //    }
-         //    if (
-         //       property === 'releaseYear' ||
-         //       property === 'runningTimeInMinutes'
-         //    ) {
-         //       direction === '>'
-         //          ? console.log(result.sort((a, b) => a - b))
-         //          : console.log(result.sort((a, b) => -a + b))
+         //    return (a, b) => {
+         //       if (direction === '<') {
+         //          return a[property] - b[property]
+         //       } else {
+         //          return -a[property] + b[property]
+         //       }
          //    }
          // }
-         // byProperty('runningTimeInMinutes', '>')
+
+         // console.table(movies.sort(byProperty('releaseYear', '<')))
+         // console.table(movies.sort(byProperty('runningTimeInMinutes', '<')))
+         // console.table(movies.sort(byProperty('movieName', '<')))
 
          // // вправа 4
          // const userNames = [
@@ -87,7 +90,8 @@
          //    'Олена',
          //    'Емма',
          // ]
-         // console.log([...new Set(userNames)])
+         // console.log([...new Set(userNames)]) // 4.1
+         // console.log(Array.from(new Set(userNames))) // 4.2
       </script>
    </body>
 </html>
