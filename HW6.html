@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         namgit
+         e="viewport"
+         content="width=device-width, initial-scale=1.0"
+      />
+   </head>
+   <body>
+      <script>
+         'use strict'
+         // // задача 1 (1)
+         // function addThemAll() {
+         //    let sum = 0
+         //    for (let i = 0; i < arguments.length; i++) {
+         //       sum += arguments[i]
+         //    }
+         //    return console.log(sum)
+         // }
+         // addThemAll(2, 4), addThemAll(1, 2, 3, 4), addThemAll(5, 5, 10)
+
+         // // задача 1 (2)
+         // function addThemAll(...args) {
+         //    let sum = 0
+         //    for (let arg of args) {
+         //       sum += arg
+         //    }
+         //    return console.log(sum)
+         // }
+         // addThemAll(2, 4), addThemAll(1, 2, 3, 4), addThemAll(5, 5, 10)
+
+         // // вправа 2
+         // const multiply = (a) => (b) => console.log(a * b)
+         // multiply(5)(5), multiply(2)(-2), multiply(4)(3)
+
+         // вправа 3
+         const movies = [
+            { movieName: 'The Thing', releaseYear: 1982, directedBy: 'Carpenter', runningTimeInMinutes: 109, },
+            { movieName: 'Aliens', releaseYear: 1986, directedBy: 'Cameron', runningTimeInMinutes: 137, },
+            { movieName: 'Men in Black', releaseYear: 1997, directedBy: 'Sonnenfeld', runningTimeInMinutes: 98, },
+            { movieName: 'Predator', releaseYear: 1987, directedBy: 'McTiernan', runningTimeInMinutes: 107, },
+         ]
+
+         function byProperty(property, direction) {
+            return (a, b) => {
+               if (direction === '<') {
+                  return a[property] - b[property]
+               } else {
+                  return -a[property] + b[property]
+               }
+            }
+         }
+
+         // console.table(movies.sort(byProperty('releaseYear', '<')))
+         // console.table(movies.sort(byProperty('runningTimeInMinutes', '<')))
+         // console.table(movies.sort(byProperty('movieName', '<')))
+
+         // вправа 4
+         const userNames = [ 'Петро', 'Емма', 'Петро', 'Емма', 'Марта', 'Яна', 'Василь', 'Антон', 'Олена', 'Емма', ]
+         // console.log([...new Set(userNames)]) // 4.1
+         // console.log(Array.from(new Set(userNames))) // 4.2
+      </script>
+   </body>
+</html>
