@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0"
+      />
+   </head>
+   <body>
+      <script>
+         'use strict'
+
+         // // задача 1
+         // const userNames = [
+         //    'Петрик Ольга Іванівна',
+         //    'Гнатюк Петро Антонович',
+         //    'Рудко Андрій Опанасович',
+         // ]
+         // const initials = userNames.sort().map((item) => {
+         //    // console.log(item)
+         //    const splittedName = item.split(' ')
+         //    // console.log(splittedName)
+         //    return splittedName.map((initials) => initials[0]).join('.') + '.'
+         // })
+         // console.log(initials)
+
+         // задача 2
+         // const vowels = ['а', 'е', 'є', 'і', 'ї', 'о', 'у', 'ю', 'я']
+         // const userNames = [
+         //    'Петро',
+         //    'Емма',
+         //    'Юстин',
+         //    'Ілля',
+         //    'Марта',
+         //    'Яна',
+         //    'Василь',
+         //    'Антон',
+         //    'Олена',
+         // ]
+         // let filteredNames = []
+
+         // // спосіб 1-й  // // //
+         // for (let i = 0; i < userNames.length; i++) {
+         //    for (let j = 0; j < vowels.length; j++) {
+         //       if (userNames[i][0] === vowels[j].toUpperCase()) {
+         //          filteredNames.push(userNames[i])
+         //       }
+         //    }
+         // }
+         // console.log(filteredNames)
+
+         // // спосіб 2-й  // // //
+         // filteredNames = userNames.filter((item) => {
+         //    if (vowels.includes(item[0].toLowerCase())) {
+         //       return true
+         //    }
+         // })
+         // console.log(filteredNames)
+
+         // // задача 3
+         // const currentMaxValue = 4589
+         // console.log(+currentMaxValue.toString().split('').reverse().join(''))
+         // console.log(typeof currentMaxValue)
+
+         // // задача 4
+         // const resultsArray = [1, 2, [3, [4]]]
+         // let productOfArray
+
+         // const flattenedArr = resultsArray.flat(Infinity)
+         // console.log(flattenedArr)
+
+         // productOfArray = flattenedArr.reduce(func, 1)
+         // function func(total, num) {
+         //    return total * num
+         // }
+         // console.log(productOfArray)
+      </script>
+   </body>
+</html>
