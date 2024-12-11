@@ -16,15 +16,15 @@
             for (let arg of args) {
                sum += arg
             }
-            return console.log(sum)
+            return sum
          }
-         // addThemAll(2, 4), addThemAll(1, 2, 3, 4), addThemAll(5, 5, 10)
+         console.log(addThemAll(2, 4)), console.log(addThemAll(1, 2, 3, 4)), console.log(addThemAll(5, 5, 10))
 
-         // вправа 2
-         const multiply = (a) => (b) => console.log(a * b)
-         // multiply(5)(5), multiply(2)(-2), multiply(4)(3)
+         // задача 2
+         const multiply = (a) => (b) => a * b
+         // console.log(multiply(5)(5)), console.log(multiply(2)(-2)), console.log(multiply(4)(3))
 
-         // вправа 3
+         // задача 3
          const movies = [
             { movieName: 'The Thing', releaseYear: 1982, directedBy: 'Carpenter', runningTimeInMinutes: 109, },
             { movieName: 'Aliens', releaseYear: 1986, directedBy: 'Cameron', runningTimeInMinutes: 137, },
@@ -41,13 +41,17 @@
                }
             }
          }
-         // console.log(movies.sort(byProperty('releaseYear', '<')))
+
+         // console.log(movies.sort(byProperty('releaseYear', '>')))
          // console.log(movies.sort(byProperty('runningTimeInMinutes', '<')))
-         console.log(movies.sort(byProperty('movieName', '<')))
-        
+         // console.log(movies.sort(byProperty('movieName', '>')))
+
          // задача 4
          const userNames = [ 'Петро', 'Емма', 'Петро', 'Емма', 'Марта', 'Яна', 'Василь', 'Антон', 'Олена', 'Емма', ]
-         // console.log([...new Set(userNames)])
+         function filterUnique(arr) {
+            return [...new Set(arr)]
+         }
+         // console.log(filterUnique(userNames))
       </script>
    </body>
 </html>
