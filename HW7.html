@@ -10,15 +10,14 @@
    <body>
       <script>
          'use strict'
-         // задача 1
-
-         const fn = function detonatorTimer(number) {
-            for (let i = number; number > 0; number--) {
-               console.log(number)
+         // 1
+         function detonator() {
+            for (let i = 3; i > 0; i--) {
+               console.log(i)
             }
+            console.log('ба-бах!')
          }
-         setTimeout(fn(3), 3000)
-
+         detonator()
       </script>
    </body>
 </html>
