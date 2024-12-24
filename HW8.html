@@ -7,16 +7,7 @@
          content="width=device-width, initial-scale=1.0"
       />
    </head>
-   <body
-      style="
-         padding: 10px;
-         margin: 10px;
-         color: red;
-         border: 1px solid black;
-         border-radius: 5px;
-         width: 100%;
-      "
-   >
+   <body>
       <h1>Основи роботи з DOM (2)</h1>
       <section class="firstSection">
          <!-- яки1йсь коментар -->
@@ -39,7 +30,7 @@
             <li>Пункт 5</li>
             <li class="text">Пункт 6</li>
          </ul>
-         <button class="redBtn">Update level</button>
+         <button class="redBtn">Update russophobia level</button>
          <div class="hatredLevelBlock">
             <label class="hatredLevelLabel">Current level:</label>
             <span class="hatredLevelCounter"></span>
@@ -47,21 +38,10 @@
       </div>
       <script>
          'use strict'
-         // 1
-         const title = document.getElementById('headerTwo')
-         // title.innerHTML = 'привіт-привіт!'
-
-         // 2
-         const wholeSection = document.querySelector('.firstSection h2')
-         // wholeSection.style.backgroundColor = 'green'
-
-         // 3
-         const fifthItem = document.querySelector('ul > li:nth-child(5)')
-         // fifthItem.style.backgroundColor = 'green'
-
-         // 4
-         const level = document.querySelector('.hatredLevelBlock')
-         // level.style.backgroundColor = 'green'
+         const _1 = document.getElementById('headerTwo')
+         const _2 = document.querySelectorAll('section h2')[0]
+         const _3 = document.querySelector('ul > li:nth-child(5)')
+         const _4 = document.getElementsByClassName('hatredLevelBlock')[0]
       </script>
    </body>
 </html>
